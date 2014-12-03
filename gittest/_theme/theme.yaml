@@ -1,0 +1,40 @@
+id: simpleproduct
+elements:
+  blog_static_files:
+    component: ~
+    data:
+      - images
+      - js
+    importer: blog_static_files
+  template_set:
+    component: ~
+    data:
+      base_path: templates
+      label: 'exported_template set'
+      templates:
+        index:
+          index_page:
+            label: インデックスページ
+            outfile: index.html
+            rebuild_me: 1
+          styles:
+            label: スタイルシート
+            outfile: styles.css
+            rebuild_me: 1
+          template_11973:
+            label: common.js
+            outfile: common.js
+            rebuild_me: 1
+        module:
+          template_11902:
+            label: header
+          template_11907:
+            label: config
+          template_11908:
+            label: common_stylesheet
+          template_11909:
+            label: common_head_js
+          template_11910:
+            label: common_bottom_js
+          template_11911:
+            label: footer
