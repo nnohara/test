@@ -29,26 +29,6 @@ elements:
             label: スタイルシート
             outfile: common/css/styles.css
             rebuild_me: 1
-          template_11967:
-            label: 'js imagesloaded.pkgd.min.js'
-            outfile: common/js/imagesloaded.pkgd.min.js
-            rebuild_me: 1
-          template_11968:
-            label: 'js jquery.contenthover.min.js'
-            outfile: common/js/jquery.contenthover.min.js
-            rebuild_me: 1
-          template_11969:
-            label: 'js jquery.infinitescroll.min.js'
-            outfile: common/js/jquery.infinitescroll.min.js
-            rebuild_me: 1
-          template_11970:
-            label: 'js masonry.pkgd.min.js'
-            outfile: common/js/masonry.pkgd.min.js
-            rebuild_me: 1
-          template_11974:
-            label: 'js jquery.sharrre.min.js'
-            outfile: common/js/jquery.sharrre.min.js
-            rebuild_me: 1
           template_11978:
             label: メインページ
             outfile: index.html
