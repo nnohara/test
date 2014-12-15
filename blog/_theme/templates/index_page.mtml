@@ -8,6 +8,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="shortcut icon" href="<mt:blogurl encode_html="1">images/favicon.ico">
 <link rel="start" href="<mt:blogurl encode_html="1">">
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="<mt:link template="feed_recent">">
 <mt:CanonicalLink>
 <!-- Open Graph Protocol -->
 <meta property="og:type" content="website">
@@ -27,31 +28,46 @@
 
 <mt:setvarblock name="thispage">TOP</mt:setvarblock>
 
-<body id="sitetop">
+<body id="top">
+
 <mt:include module="header">
-<section id="mainvisual" id="top">
+
+<section id="mainvisual-lower">
+  <div class="overray"></div>
   <div class="container">
-    <h2><img src="<mt:blogurl encode_html="1">images/main-img.png" alt=""></h2>
-    <p id="main-text">MovableType.netデザインテーマ「Simple Product」のデモサイトです！!<br />
-「Simple Product」は1ページ完結可能なレスポンシブウェブデザインを採用したテーマです。a
-    </p>
+    <div class="row">
+      <div class="col-sm-12">
+        <h2><i class="fa fa-book"></i><a href="<mt:blogurl encode_html="1">"><mt:blogname encode_html="1"></a></h2>
+      </div>
+    </div>
   </div>
 </section>
 
-<mt:Pages sort_order="ascend">
-  <section class="webpages" id="<$MTPageBasename$>">
-    <div class="container">
-      <h3><$mt:PageTitle$></h3>
-	  <div class="row">
-		  <$mt:PageBody$>
-	  </div>
+<div id="content">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="col-sm-9" id="blog-primary-content">
+        <div id="entry-list">
+<mt:include module="entry-list">
+        </div>
+        <div class="holder"></div>
+      </div><!-- /primary-content -->
+      <aside class="col-sm-3 pull-right" id="sidebar">
+<mt:include module="blog-sidemenu">
+      </aside><!-- sidebar -->
     </div>
-  </section>
-</mt:Pages>
-
+  </div>
+</div>
 <mt:include module="footer">
 
 <mt:include module="common_bottom_js">
+<script src="<mt:blogrelativeurl>js/jquery.tile.min.js"></script>
+<script type="application/javascript">
+$(window).load(function(){
+    $('#top-news .col-sm-3').tile(4);
+    $('.webpages .col-sm-4').tile(3);
+});
+</script>
   
 </body>
 </html>
