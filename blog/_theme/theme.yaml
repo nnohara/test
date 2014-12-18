@@ -1,4 +1,4 @@
-id: multithemeblog
+id: simplecorporate
 elements:
   blog_static_files:
     component: ~
@@ -31,10 +31,6 @@ elements:
           index_page:
             label: インデックスページ
             outfile: index.html
-            rebuild_me: 1
-          javascript:
-            label: JavaScript
-            outfile: mt.js
             rebuild_me: 1
           main_index:
             label: 'ニュース TOP'
